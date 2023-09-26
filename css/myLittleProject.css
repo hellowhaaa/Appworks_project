@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.shadow1 {
+  position: absolute;
+  bottom: 0%;
+  height: 50px;
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to bottom, #edede9, transparent);
+}
+
+.shadow2 {
+  position: absolute;
+  bottom: 0%;
+  height: 50px;
+  width: 100%;
+  left: 0;
+  background-color: #edede9;
+}
+
+.wrapper {
+  height: 100vh;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.cloud,
+.mountainDown,
+.mountainUp,
+.mountainRight,
+.mountainMiddle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 30;
+}
+
+.container {
+  max-width: 70rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.profile {
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: rgba(39, 65, 7, 0.527);
+}
+
+.list-item span {
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 0 0.7rem;
+  color: beige;
+  font-size: 1.2rem;
+}
+
+.list-item a,
+.profile a {
+  text-decoration: none;
+  color: beige;
+}
+.list-item a:hover,
+.profile a:hover {
+  color: black;
+}
+.list-item a:active,
+.profile a:active {
+  background-color: yellow;
+}
+
+.title {
+  font-size: 5rem;
+  color: white;
+  text-shadow: 0 0 10px black;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-container {
+  height: 100vh;
+}
+
+.one {
+  background-color: #edede9;
+}
+
+.two {
+  background-color: #d6ccc2;
+}
+
+.three {
+  background-color: #f5ebe0;
+}
+
+.four {
+  background-color: #e3d5ca;
+}/*# sourceMappingURL=myLittleProject.css.map */
