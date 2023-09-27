@@ -8,28 +8,6 @@ body {
   font-family: sans-serif;
 }
 
-.shadow1 {
-  position: absolute;
-  bottom: 0%;
-  height: 50px;
-  width: 100%;
-  left: 0;
-  background: linear-gradient(to bottom, #edede9, transparent);
-}
-
-.shadow2 {
-  position: absolute;
-  bottom: 0%;
-  height: 50px;
-  width: 100%;
-  left: 0;
-  background-color: #edede9;
-}
-
-.wrapper {
-  height: 100vh;
-}
-
 header {
   position: relative;
   display: flex;
@@ -48,6 +26,12 @@ header {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: -1;
+}
+
+.wrapper {
+  height: 100vh;
+  background-color: rgba(94, 117, 117, 0.205);
   z-index: -1;
 }
 
@@ -112,29 +96,73 @@ nav {
   text-shadow: 0 0 10px black;
 }
 
-.page {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
+.portfolio {
+  background-color: #3a5a40;
+}
+
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
   align-items: center;
+  gap: 3rem;
+  margin-top: 4.2rem;
 }
 
-.second-container {
-  height: 100vh;
+.row img {
+  height: auto;
+  width: 100%;
+  border-radius: 28px;
+  margin-bottom: 1.4rem;
 }
 
-.one {
-  background-color: #edede9;
+.row {
+  border-radius: 28px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 5px #a3b18a;
+  padding: 20px;
+  transition: all 0.5s ease;
 }
 
-.two {
-  background-color: #d6ccc2;
+.main-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
 }
 
-.three {
-  background-color: #f5ebe0;
+.row h5 {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: antiquewhite;
 }
 
-.four {
-  background-color: #e3d5ca;
+.row-icon i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  font-size: 25px;
+  border-radius: 50%;
+  color: white;
+  background: #023e8a;
+  z-index: 1;
+}
+
+.row-icon i:hover {
+  background-color: red;
+}
+
+.row h4 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.row:hover {
+  border: 1px solid #ffbe0b;
+  transform: translateY(-5px) scale(1.03);
 }/*# sourceMappingURL=myLittleProject.css.map */
