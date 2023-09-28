@@ -3,7 +3,7 @@
 const translate = document.querySelectorAll(".translate");
 const big_title = document.querySelector(".big-title");
 const header = document.querySelector('header');
-const shadow = document.querySelector(".shadow1");
+const shadow = document.querySelector(".shadow");
 
 let header_height = header.offsetHeight;
 
@@ -22,7 +22,7 @@ window.addEventListener("scroll", () => {
 
     big_title.style.opacity = -scroll / (header_height / 2) + 1;
     // // opacity value between 0 and 1
-    // shadow.style.height = `${scroll * 0.5 + 100}px`;
+    shadow.style.height = `${scroll * 0.5 + 150}px`;
 
 
 });

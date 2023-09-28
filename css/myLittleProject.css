@@ -8,6 +8,15 @@ body {
   font-family: sans-serif;
 }
 
+.shadow {
+  position: absolute;
+  bottom: -100px;
+  height: 100px;
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to top, #006045, #2d3e30);
+}
+
 header {
   position: relative;
   display: flex;
@@ -87,7 +96,7 @@ nav {
 }
 .list-item a:active,
 .profile a:active {
-  background-color: yellow;
+  color: white;
 }
 
 .title {
@@ -96,8 +105,15 @@ nav {
   text-shadow: 0 0 10px black;
 }
 
+.bg-green {
+  z-index: -1;
+}
+
 .portfolio {
-  background-color: #3a5a40;
+  background-image: url(../img/bg/bg4.jpg);
+  background-repeat: repeat-y;
+  width: 100%;
+  height: 100vh;
 }
 
 .portfolio-content {
@@ -105,7 +121,6 @@ nav {
   grid-template-columns: repeat(auto-fit, minmax(350px, auto));
   align-items: center;
   gap: 3rem;
-  margin-top: 4.2rem;
 }
 
 .row img {
@@ -121,13 +136,15 @@ nav {
   box-shadow: 0 0 5px #a3b18a;
   padding: 20px;
   transition: all 0.5s ease;
+  margin: 0 10px;
+  position: relative;
+  top: 100px;
 }
 
 .main-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
 }
 
 .row h5 {
@@ -155,6 +172,11 @@ nav {
   background-color: red;
 }
 
+.row-icon .drive {
+  color: white;
+  background: rgba(255, 207, 75, 0.8117647059);
+}
+
 .row h4 {
   font-size: 25px;
   font-weight: 700;
@@ -163,6 +185,6 @@ nav {
 }
 
 .row:hover {
-  border: 1px solid #ffbe0b;
+  border: 3px solid #ffbe0b;
   transform: translateY(-5px) scale(1.03);
 }/*# sourceMappingURL=myLittleProject.css.map */
