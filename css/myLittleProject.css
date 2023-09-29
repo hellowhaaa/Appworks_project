@@ -109,11 +109,9 @@ nav {
   z-index: -1;
 }
 
-.portfolio {
+section {
   background-image: url(../img/bg/bg4.jpg);
   background-repeat: repeat-y;
-  width: 100%;
-  height: 100vh;
 }
 
 .portfolio-content {
@@ -121,6 +119,21 @@ nav {
   grid-template-columns: repeat(auto-fit, minmax(350px, auto));
   align-items: center;
   gap: 3rem;
+}
+
+.python {
+  color: #f5ebe0;
+  letter-spacing: 2px;
+}
+
+.python-content {
+  padding: 20px 0;
+  letter-spacing: 1px;
+}
+
+.python-content span {
+  color: #f5ebe0;
+  letter-spacing: 2px;
 }
 
 .row img {
@@ -138,7 +151,10 @@ nav {
   transition: all 0.5s ease;
   margin: 0 10px;
   position: relative;
-  top: 100px;
+}
+
+.row a {
+  text-decoration: none;
 }
 
 .main-row {
@@ -148,11 +164,15 @@ nav {
 }
 
 .row h5 {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: antiquewhite;
+}
+
+.row p {
+  font-size: 18px;
 }
 
 .row-icon i {
@@ -172,11 +192,6 @@ nav {
   background-color: red;
 }
 
-.row-icon .drive {
-  color: white;
-  background: rgba(255, 207, 75, 0.8117647059);
-}
-
 .row h4 {
   font-size: 25px;
   font-weight: 700;
@@ -187,4 +202,12 @@ nav {
 .row:hover {
   border: 3px solid #ffbe0b;
   transform: translateY(-5px) scale(1.03);
+}
+
+.update {
+  padding: 0 20px 20px 0;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }/*# sourceMappingURL=myLittleProject.css.map */

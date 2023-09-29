@@ -18,8 +18,15 @@ body {
     left: 0;
     background: linear-gradient(to top, #006045, #2d3e30);
 
-
 }
+
+// .block {
+//     position: absolute;
+//     height: 100px;
+//     width: 100%;
+//     left: 0;
+
+// }
 
 
 // .shadow2 {
@@ -164,19 +171,37 @@ nav {
 
 
 
-.portfolio {
+section {
     background-image: url(../img/bg/bg4.jpg);
     background-repeat: repeat-y;
-    width: 100%;
-    height: 100vh;
+    // width: 100%;
+    // height: 100%;
+
 }
 
 .portfolio-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    // repeat(次數, 格線, 格線)
     align-items: center;
     gap: 3rem;
 }
+
+.python {
+    color: #f5ebe0;
+    letter-spacing: 2px;
+}
+
+.python-content {
+    padding: 20px 0;
+    letter-spacing: 1px;
+}
+
+.python-content span {
+    color: #f5ebe0;
+    letter-spacing: 2px;
+}
+
 
 .row img {
     height: auto;
@@ -195,8 +220,12 @@ nav {
     transition: all .50s ease;
     margin: 0 10px;
     position: relative;
-    top: 100px;
+    // top: 100px;
 
+}
+
+.row a {
+    text-decoration: none;
 }
 
 .main-row {
@@ -207,11 +236,16 @@ nav {
 }
 
 .row h5 {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     color: antiquewhite;
+
+}
+
+.row p {
+    font-size: 18px;
 }
 
 .row-icon i {
@@ -233,11 +267,6 @@ nav {
 
 }
 
-.row-icon .drive {
-    color: white;
-    background: #ffcf4bcf;
-}
-
 
 .row h4 {
     font-size: 25px;
@@ -250,4 +279,12 @@ nav {
 .row:hover {
     border: 3px solid #ffbe0b;
     transform: translateY(-5px) scale(1.03);
+}
+
+.update {
+    padding: 0 20px 20px 0;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
